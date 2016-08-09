@@ -1,13 +1,13 @@
-#ifndef STONE_H
-#define STONE_H
+#ifndef SOIL_H
+#define SOIL_H
 
 #include "ground.h"
 
-class Stone : public Ground
+class Soil : public Ground
 {
 public:
-    Stone(const LogicPosition &position);
-    virtual ~Stone();
+    Soil(const LogicPosition &position);
+    virtual ~Soil();
 
     virtual void draw() const;
     virtual Actor * copy() const;
@@ -16,4 +16,4 @@ public:
     virtual Plant_Power plantsPower() const;
 };
 
-#endif // STONE_H
+#endif // SOIL_H

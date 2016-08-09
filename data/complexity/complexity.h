@@ -9,7 +9,7 @@ public:
     Complexity();
     virtual ~Complexity();
 
-    virtual float getZombieLifesCoeff() const = 0;
+    virtual Zombie_Power_Coeff getZombieLifesCoeff() const = 0;
 };
 
 #endif // COMPLEXITY_H

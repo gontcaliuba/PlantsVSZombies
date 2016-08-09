@@ -21,7 +21,13 @@ SOURCES += main.cpp\
     data/ground/stone.cpp \
     data/other/hp.cpp \
     data/actor.cpp \
-    data/complexity/complexity.cpp
+    data/complexity/complexity.cpp \
+    data/complexity/easy.cpp \
+    data/complexity/normal.cpp \
+    data/complexity/hard.cpp \
+    data/ground/sand.cpp \
+    data/ground/grass.cpp \
+    data/ground/soil.cpp
 
 HEADERS  += mainwindow.h \
     data/coord/graphicalposition.h \
@@ -32,6 +38,12 @@ HEADERS  += mainwindow.h \
     data/other/hp.h \
     data/actor.h \
     data/defines.h \
-    data/complexity/complexity.h
+    data/complexity/complexity.h \
+    data/complexity/easy.h \
+    data/complexity/normal.h \
+    data/complexity/hard.h \
+    data/ground/sand.h \
+    data/ground/grass.h \
+    data/ground/soil.h
 
 FORMS    += mainwindow.ui

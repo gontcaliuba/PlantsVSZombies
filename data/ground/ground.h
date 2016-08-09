@@ -14,7 +14,10 @@ public:
     virtual ~Ground();
 
     virtual bool needToDestroy() const;
+    virtual ActorType getType() const;
+    virtual void sound() const;
     virtual Fertility getFertility() const = 0;
+    virtual Plant_Power plantsPower() const = 0;
     const LogicPosition &getPosition() const;
 };
 

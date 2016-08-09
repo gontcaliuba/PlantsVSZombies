@@ -16,6 +16,15 @@ bool Ground::needToDestroy() const
     return false;
 }
 
+ActorType Ground::getType() const
+{
+    return GROUND;
+}
+
+void Ground::sound() const
+{
+}
+
 const LogicPosition &Ground::getPosition() const
 {
     return position;
