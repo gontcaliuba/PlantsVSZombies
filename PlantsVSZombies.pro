@@ -14,9 +14,6 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    data/coord/graphicalposition.cpp \
-    data/coord/logicposition.cpp \
-    data/coord/physicposition.cpp \
     data/ground/ground.cpp \
     data/ground/stone.cpp \
     data/other/hp.cpp \
@@ -27,12 +24,13 @@ SOURCES += main.cpp\
     data/complexity/hard.cpp \
     data/ground/sand.cpp \
     data/ground/grass.cpp \
-    data/ground/soil.cpp
+    data/ground/soil.cpp \
+    data/plants/plant.cpp \
+    data/zombie/zombie.cpp \
+    data/aliveactor.cpp \
+    data/coord/position.cpp
 
 HEADERS  += mainwindow.h \
-    data/coord/graphicalposition.h \
-    data/coord/logicposition.h \
-    data/coord/physicposition.h \
     data/ground/ground.h \
     data/ground/stone.h \
     data/other/hp.h \
@@ -44,6 +42,10 @@ HEADERS  += mainwindow.h \
     data/complexity/hard.h \
     data/ground/sand.h \
     data/ground/grass.h \
-    data/ground/soil.h
+    data/ground/soil.h \
+    data/plants/plant.h \
+    data/zombie/zombie.h \
+    data/aliveactor.h \
+    data/coord/position.h
 
 FORMS    += mainwindow.ui

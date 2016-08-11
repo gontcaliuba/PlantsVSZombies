@@ -2,11 +2,12 @@
 #define SOIL_H
 
 #include "ground.h"
+#include "data/coord/position.h"
 
 class Soil : public Ground
 {
 public:
-    Soil(const LogicPosition &position);
+    Soil(const Position &position);
     virtual ~Soil();
 
     virtual void draw() const;

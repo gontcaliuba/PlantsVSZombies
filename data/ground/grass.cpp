@@ -1,6 +1,6 @@
 #include "grass.h"
 
-Grass::Grass(const LogicPosition &position)
+Grass::Grass(const Position &position)
     : Ground(position)
 {
 }

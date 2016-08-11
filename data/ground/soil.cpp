@@ -1,6 +1,6 @@
 #include "soil.h"
 
-Soil::Soil(const LogicPosition &position)
+Soil::Soil(const Position &position)
     : Ground(position)
 {
 }

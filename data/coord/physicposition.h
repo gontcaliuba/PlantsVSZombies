@@ -2,8 +2,9 @@
 #define PHYSICPOSITION_H
 
 #include "data/defines.h"
+#include "data/coord/position.h"
 
-class PhysicPosition
+class PhysicPosition : public Position
 {
 private:
     Physic_Coordinate x;

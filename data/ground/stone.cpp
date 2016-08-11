@@ -2,7 +2,7 @@
 #include "ground.h"
 
 
-Stone::Stone(const LogicPosition &position)
+Stone::Stone(const Position &position)
     : Ground(position)
 {
 }

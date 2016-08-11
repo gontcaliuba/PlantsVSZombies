@@ -2,8 +2,9 @@
 #define LOGICPOSITION_H
 
 #include "data/defines.h"
+#include "data/coord/position.h"
 
-class LogicPosition
+class LogicPosition : public Position
 {
 private:
     Logic_Coordinate x;

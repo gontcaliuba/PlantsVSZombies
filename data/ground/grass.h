@@ -2,11 +2,12 @@
 #define GRASS_H
 
 #include "ground.h"
+#include "data/coord/position.h"
 
 class Grass : public Ground
 {
 public:
-    Grass(const LogicPosition &position);
+    Grass(const Position &position);
     virtual ~Grass();
 
     virtual void draw() const;

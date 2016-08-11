@@ -1,9 +1,8 @@
 #include "ground.h"
 
 
-Ground::Ground(const LogicPosition &position)
-    : Actor(),
-      position(position)
+Ground::Ground(const Position &position)
+    : Actor(position)
 {
 }
 
@@ -23,9 +22,4 @@ ActorType Ground::getType() const
 
 void Ground::sound() const
 {
-}
-
-const LogicPosition &Ground::getPosition() const
-{
-    return position;
 }

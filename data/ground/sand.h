@@ -2,11 +2,12 @@
 #define SAND_H
 
 #include "ground.h"
+#include "data/coord/position.h"
 
 class Sand : public Ground
 {
 public:
-    Sand(const LogicPosition &position);
+    Sand(const Position &position);
     virtual ~Sand();
 
     virtual void draw() const;

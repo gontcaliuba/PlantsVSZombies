@@ -2,15 +2,13 @@
 #define GROUND_H
 
 #include "data/defines.h"
-#include "data/coord/logicposition.h"
 #include "data/actor.h"
+#include "data/coord/position.h"
 
 class Ground : public Actor
 {
-    LogicPosition position;
-
 public:
-    Ground(const LogicPosition &position);
+    Ground(const Position &position);
     virtual ~Ground();
 
     virtual bool needToDestroy() const;
@@ -18,7 +16,6 @@ public:
     virtual void sound() const;
     virtual Fertility getFertility() const = 0;
     virtual Plant_Power plantsPower() const = 0;
-    const LogicPosition &getPosition() const;
 };
 
 #endif // GROUND_H

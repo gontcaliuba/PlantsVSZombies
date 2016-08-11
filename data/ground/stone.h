@@ -2,11 +2,12 @@
 #define STONE_H
 
 #include "ground.h"
+#include "data/coord/position.h"
 
 class Stone : public Ground
 {
 public:
-    Stone(const LogicPosition &position);
+    Stone(const Position &position);
     virtual ~Stone();
 
     virtual void draw() const;

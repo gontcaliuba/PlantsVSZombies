@@ -2,22 +2,23 @@
 #define GRAPHICALPOSITION_H
 
 #include "data/defines.h"
+#include "data/coord/position.h"
 
 
-class GraphicalPosition
+class GraphicalPosition : public Position
 {
 private:
-    Grapfical_Coordinate x;
-    Grapfical_Coordinate y;
+    Graphical_Coordinate x;
+    Graphical_Coordinate y;
 
 public:
     GraphicalPosition();
-    GraphicalPosition(Grapfical_Coordinate x, Grapfical_Coordinate y);
+    GraphicalPosition(Graphical_Coordinate x, Graphical_Coordinate y);
 
-    void setX(Grapfical_Coordinate x);
-    void setY(Grapfical_Coordinate y);
-    Grapfical_Coordinate getX() const;
-    Grapfical_Coordinate getY() const;
+    void setX(Graphical_Coordinate x);
+    void setY(Graphical_Coordinate y);
+    Graphical_Coordinate getX() const;
+    Graphical_Coordinate getY() const;
 };
 
 #endif // GRAPHICALPOSITION_H

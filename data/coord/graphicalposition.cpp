@@ -5,27 +5,27 @@ GraphicalPosition::GraphicalPosition()
 {
 }
 
-GraphicalPosition::GraphicalPosition(Grapfical_Coordinate x, Grapfical_Coordinate y)
+GraphicalPosition::GraphicalPosition(Graphical_Coordinate x, Graphical_Coordinate y)
     : x(x), y(y)
 {
 }
 
-void GraphicalPosition::setX(Grapfical_Coordinate x)
+void GraphicalPosition::setX(Graphical_Coordinate x)
 {
     this->x = x;
 }
 
-void GraphicalPosition::setY(Grapfical_Coordinate y)
+void GraphicalPosition::setY(Graphical_Coordinate y)
 {
     this->y = y;
 }
 
-Grapfical_Coordinate GraphicalPosition::getX() const
+Graphical_Coordinate GraphicalPosition::getX() const
 {
     return x;
 }
 
-Grapfical_Coordinate GraphicalPosition::getY() const
+Graphical_Coordinate GraphicalPosition::getY() const
 {
     return y;
 }

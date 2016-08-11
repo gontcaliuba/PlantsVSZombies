@@ -1,6 +1,6 @@
 #include "sand.h"
 
-Sand::Sand(const LogicPosition &position)
+Sand::Sand(const Position &position)
     : Ground(position)
 {
 }
