@@ -11,6 +11,7 @@ public:
 
     virtual void generateAttack(Actor &attacked) const;
     virtual void reloading() const;
+    virtual PlantType getPlantType();
 };
 
 #endif // THORNS_H

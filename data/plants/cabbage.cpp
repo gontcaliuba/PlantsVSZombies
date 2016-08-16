@@ -20,3 +20,8 @@ void Cabbage::reloading() const
 
 }
 
+PlantType Cabbage::getPlantType()
+{
+    return CABBAGE;
+}
+

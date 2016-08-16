@@ -4,6 +4,16 @@
 #include "data/aliveactor.h"
 #include "data/coord/position.h"
 
+enum PlantType
+{
+    BOXER,
+    CABBAGE,
+    EMPTYPLANT,
+    LASER,
+    SUNFLOWER,
+    THORNS
+};
+
 class Plant : public AliveActor
 {
     Sun_Point price;
@@ -12,7 +22,8 @@ public:
     virtual ~Plant();
 
     virtual ActorType getType() const;
-    virtual bool canReplant(const Plant &plant) const = 0;
+    virtual PlantType getPlantType() const = 0;
+    virtual bool canReplant(const Plant &plant) const;
 };
 
 #endif // PLANT_H

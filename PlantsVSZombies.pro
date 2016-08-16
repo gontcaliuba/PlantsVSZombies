@@ -37,7 +37,8 @@ SOURCES += main.cpp\
     data/zombie/weakzombie.cpp \
     data/zombie/strongzombie.cpp \
     data/zombie/boss.cpp \
-    data/zombie/weakzombiewithbasket.cpp
+    data/zombie/weakzombiewithbasket.cpp \
+    data/plants/emptyplant.cpp
 
 HEADERS  += mainwindow.h \
     data/ground/ground.h \
@@ -64,6 +65,7 @@ HEADERS  += mainwindow.h \
     data/zombie/weakzombie.h \
     data/zombie/strongzombie.h \
     data/zombie/boss.h \
-    data/zombie/weakzombiewithbasket.h
+    data/zombie/weakzombiewithbasket.h \
+    data/plants/emptyplant.h
 
 FORMS    += mainwindow.ui

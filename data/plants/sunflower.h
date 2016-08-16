@@ -13,6 +13,7 @@ public:
 
     void generateSuns();
     virtual void reloading() const;
+    virtual PlantType getPlantType();
 
 };
 

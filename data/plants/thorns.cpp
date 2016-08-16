@@ -20,3 +20,8 @@ void Thorns::reloading() const
 
 }
 
+PlantType Thorns::getPlantType()
+{
+    return THORNS;
+}
+

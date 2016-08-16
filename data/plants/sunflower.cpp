@@ -20,3 +20,9 @@ void Sunflower::reloading() const
 
 }
 
+PlantType Sunflower::getPlantType()
+{
+    return SUNFLOWER;
+}
+
+

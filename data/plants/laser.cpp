@@ -20,3 +20,9 @@ void Laser::reloading() const
 
 }
 
+PlantType Laser::getPlantType()
+{
+    return LASER;
+}
+
+

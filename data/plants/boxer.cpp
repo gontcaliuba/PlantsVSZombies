@@ -20,3 +20,8 @@ void Boxer::reloading() const
 
 }
 
+PlantType Boxer::getPlantType()
+{
+    return BOXER;
+}
+

@@ -16,4 +16,10 @@ ActorType Plant::getType() const
     return PLANT;
 }
 
+bool Plant::canReplant(const Plant &plant) const
+{
+    if (plant.getPlantType() == EMPTYPLANT) return true;
+    return false;
+}
+
 
