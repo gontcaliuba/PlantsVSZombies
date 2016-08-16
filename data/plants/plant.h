@@ -12,7 +12,7 @@ public:
     virtual ~Plant();
 
     virtual ActorType getType() const;
-    virtual bool canPlant(const Plant &plant) const = 0;
+    virtual bool canReplant(const Plant &plant) const = 0;
 };
 
 #endif // PLANT_H

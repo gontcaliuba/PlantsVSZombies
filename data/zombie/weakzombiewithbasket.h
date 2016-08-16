@@ -7,6 +7,7 @@ class WeakZombieWithBasket : public Zombie
 {
 public:
     WeakZombieWithBasket(const Complexity &complexityOfLevel, const Position &position);
+    virtual ~WeakZombieWithBasket();
 };
 
 #endif // WEAKZOMBIEWITHBASKET_H

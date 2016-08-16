@@ -6,3 +6,8 @@ WeakZombieWithBasket::WeakZombieWithBasket(const Complexity &complexityOfLevel, 
 
 }
 
+WeakZombieWithBasket::~WeakZombieWithBasket()
+{
+
+}
+
