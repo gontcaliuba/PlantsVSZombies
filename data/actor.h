@@ -1,6 +1,7 @@
 #ifndef ACTOR_H
 #define ACTOR_H
 
+#include <Qt>
 #include "data/coord/position.h"
 
 enum ActorType

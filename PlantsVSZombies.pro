@@ -28,7 +28,16 @@ SOURCES += main.cpp\
     data/plants/plant.cpp \
     data/zombie/zombie.cpp \
     data/aliveactor.cpp \
-    data/coord/position.cpp
+    data/coord/position.cpp \
+    data/plants/cabbage.cpp \
+    data/plants/laser.cpp \
+    data/plants/boxer.cpp \
+    data/plants/thorns.cpp \
+    data/plants/sunflower.cpp \
+    data/zombie/weakzombie.cpp \
+    data/zombie/strongzombie.cpp \
+    data/zombie/boss.cpp \
+    data/zombie/weakzombiewithbasket.cpp
 
 HEADERS  += mainwindow.h \
     data/ground/ground.h \
@@ -46,6 +55,15 @@ HEADERS  += mainwindow.h \
     data/plants/plant.h \
     data/zombie/zombie.h \
     data/aliveactor.h \
-    data/coord/position.h
+    data/coord/position.h \
+    data/plants/cabbage.h \
+    data/plants/laser.h \
+    data/plants/boxer.h \
+    data/plants/thorns.h \
+    data/plants/sunflower.h \
+    data/zombie/weakzombie.h \
+    data/zombie/strongzombie.h \
+    data/zombie/boss.h \
+    data/zombie/weakzombiewithbasket.h
 
 FORMS    += mainwindow.ui

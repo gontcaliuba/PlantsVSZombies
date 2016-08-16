@@ -6,9 +6,10 @@
 class HP
 {
     Health_Points health;
+
 public:
     HP();
-    HP(Health_Points health);
+    explicit HP(Health_Points health);
     Health_Points getHP() const;
     void setHP(Health_Points health);
     bool isAlive();

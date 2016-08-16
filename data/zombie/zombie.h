@@ -9,14 +9,12 @@
 class Zombie : public AliveActor
 {
 public:
-    Zombie(const Complexity &complexityOfLevel, const Position &position, const Health_Points &hp);
+    Zombie(const Complexity &complexityOfLevel, const Position &position, const HP &hp);
     virtual ~Zombie();
 
     virtual ActorType getType() const;
     virtual bool canMove() const = 0;
     virtual void move() = 0;
-    virtual void generateAttack(Actor &attacked) const = 0;
-    virtual void reloading() const = 0;
 };
 
 #endif // ZOMBIE_H

@@ -10,6 +10,7 @@ typedef float Fertility;
 typedef float Sun_Point;
 typedef float Plant_Power;
 typedef float Zombie_Power_Coeff;
+typedef int Second;
 
 #endif // DEFINES
 
