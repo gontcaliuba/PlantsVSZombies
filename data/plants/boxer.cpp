@@ -1,11 +1,16 @@
 #include "boxer.h"
 
-Boxer::Boxer(const Position &position, const HP &hp, const Sun_Point price)
-    : Plant(position, hp, price)
+Boxer::Boxer(const Position &position)
+    : Plant(position, HP(40), 150)
 {
 }
 
 Boxer::~Boxer()
+{
+
+}
+
+void Boxer::draw() const
 {
 
 }
@@ -15,13 +20,18 @@ void Boxer::generateAttack(Actor &attacked) const
     Q_UNUSED(attacked);
 }
 
-void Boxer::reloading() const
+void Boxer::AttackReloading() const
 {
 
 }
 
-PlantType Boxer::getPlantType()
+PlantType Boxer::getPlantType() const
 {
     return BOXER;
+}
+
+Actor *Boxer::copy() const
+{
+    return new Boxer(getPosition());
 }
 

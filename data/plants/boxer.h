@@ -6,12 +6,15 @@
 class Boxer : public Plant
 {
 public:
-    Boxer(const Position &position, const HP &hp, const Sun_Point price);
+    Boxer(const Position &position);
     virtual ~Boxer();
 
+    virtual void draw() const;
+    virtual Actor * copy() const;
+
     virtual void generateAttack(Actor &attacked) const;
-    virtual void reloading() const;
-    virtual PlantType getPlantType();
+    virtual void AttackReloading() const;
+    virtual PlantType getPlantType() const;
 };
 
 #endif // BOXER_H

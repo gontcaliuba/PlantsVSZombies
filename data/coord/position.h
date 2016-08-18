@@ -8,6 +8,7 @@ class Position
 {
     Physic_Coordinate x;
     Physic_Coordinate y;
+
 public:
     Position();
     Position(Physic_Coordinate x, Physic_Coordinate y);

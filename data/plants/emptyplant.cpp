@@ -11,13 +11,23 @@ EmptyPlant::~EmptyPlant()
 
 }
 
+void EmptyPlant::draw() const
+{
+
+}
+
+Actor *EmptyPlant::copy() const
+{
+    return new EmptyPlant(getPosition());
+}
+
 bool EmptyPlant::canReplant(const Plant &plant) const
 {
     if (plant.getPlantType() == EMPTYPLANT) return false;
     return true;
 }
 
-PlantType EmptyPlant::getPlantType()
+PlantType EmptyPlant::getPlantType() const
 {
     return EMPTYPLANT;
 }

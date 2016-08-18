@@ -16,6 +16,7 @@ enum ActorType
 class Actor
 {
     Position position;
+
 public:
     Actor(const Position &position);
     virtual ~Actor();

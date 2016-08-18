@@ -1,7 +1,7 @@
 #include "thorns.h"
 
-Thorns::Thorns(const Position &position, const HP &hp, const Sun_Point price)
-    : Plant(position, hp, price)
+Thorns::Thorns(const Position &position)
+    : Plant(position, HP(40), 100)
 {
 }
 
@@ -10,17 +10,27 @@ Thorns::~Thorns()
 
 }
 
+void Thorns::draw() const
+{
+
+}
+
+Actor *Thorns::copy() const
+{
+    return new Thorns(getPosition());
+}
+
 void Thorns::generateAttack(Actor &attacked) const
 {
     Q_UNUSED(attacked);
 }
 
-void Thorns::reloading() const
+void Thorns::AttackReloading() const
 {
 
 }
 
-PlantType Thorns::getPlantType()
+PlantType Thorns::getPlantType() const
 {
     return THORNS;
 }

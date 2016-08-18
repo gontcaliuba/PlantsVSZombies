@@ -6,14 +6,18 @@
 
 class Sunflower : public Plant
 {
-    Second timeForSunsGeneration;
+    Millisecond timeForSunsGeneration;
+
 public:
-    Sunflower(const Position &position, const HP &hp, const Sun_Point price);
+    Sunflower(const Position &position);
     virtual ~Sunflower();
 
+    virtual void draw() const;
+    virtual Actor * copy() const;
+
     void generateSuns();
-    virtual void reloading() const;
-    virtual PlantType getPlantType();
+    virtual void AttackReloading() const;
+    virtual PlantType getPlantType() const;
 
 };
 

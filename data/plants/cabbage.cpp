@@ -1,7 +1,7 @@
 #include "cabbage.h"
 
-Cabbage::Cabbage(const Position &position, const HP &hp, const Sun_Point price)
-    : Plant(position, hp, price)
+Cabbage::Cabbage(const Position &position)
+    : Plant(position, HP(40), 100)
 {
 }
 
@@ -10,17 +10,27 @@ Cabbage::~Cabbage()
 
 }
 
+void Cabbage::draw() const
+{
+
+}
+
+Actor *Cabbage::copy() const
+{
+    return new Cabbage(getPosition());
+}
+
 void Cabbage::generateAttack(Actor &attacked) const
 {
     Q_UNUSED(attacked);
 }
 
-void Cabbage::reloading() const
+void Cabbage::AttackReloading() const
 {
 
 }
 
-PlantType Cabbage::getPlantType()
+PlantType Cabbage::getPlantType() const
 {
     return CABBAGE;
 }

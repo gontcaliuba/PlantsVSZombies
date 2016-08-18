@@ -10,6 +10,17 @@ AliveActor::~AliveActor()
 {
 }
 
+bool AliveActor::needToDestroy() const
+{
+    if (hp.getHP() > 0) return false;
+    return true;
+}
+
+HP AliveActor::getHP() const
+{
+    return hp;
+}
+
 void AliveActor::takeDamage(Health_Points damagedHP)
 {
     hp.reduceHealth(damagedHP);
@@ -17,6 +28,13 @@ void AliveActor::takeDamage(Health_Points damagedHP)
 
 void AliveActor::generateAttack(Actor &attacked)
 {
-    Q_UNUSED(attacked);
+    Attack attack(getPosition());
+    if (attack.canAttack(attacked) == true)
+        attack.attack(attacked);
+}
+
+void AliveActor::AttackReloading() const
+{
+
 }
 

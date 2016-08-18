@@ -16,3 +16,13 @@ ActorType Zombie::getType() const
     return ZOMBIE;
 }
 
+void Zombie::move()
+{
+
+}
+
+bool Zombie::canMove() const
+{
+
+}
+

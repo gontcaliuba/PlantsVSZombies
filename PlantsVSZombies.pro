@@ -38,7 +38,16 @@ SOURCES += main.cpp\
     data/zombie/strongzombie.cpp \
     data/zombie/boss.cpp \
     data/zombie/weakzombiewithbasket.cpp \
-    data/plants/emptyplant.cpp
+    data/plants/emptyplant.cpp \
+    data/other/attack.cpp \
+    data/goals/goal.cpp \
+    data/menu/menustate.cpp \
+    data/menu/mainmenu.cpp \
+    data/menu/settings.cpp \
+    data/menu/gamechoice.cpp \
+    data/menu/game.cpp \
+    data/menu/exit.cpp \
+    data/gamestate.cpp
 
 HEADERS  += mainwindow.h \
     data/ground/ground.h \
@@ -66,6 +75,15 @@ HEADERS  += mainwindow.h \
     data/zombie/strongzombie.h \
     data/zombie/boss.h \
     data/zombie/weakzombiewithbasket.h \
-    data/plants/emptyplant.h
+    data/plants/emptyplant.h \
+    data/other/attack.h \
+    data/goals/goal.h \
+    data/menu/menustate.h \
+    data/menu/mainmenu.h \
+    data/menu/settings.h \
+    data/menu/gamechoice.h \
+    data/menu/game.h \
+    data/menu/exit.h \
+    data/gamestate.h
 
 FORMS    += mainwindow.ui
