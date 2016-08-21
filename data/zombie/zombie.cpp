@@ -2,7 +2,8 @@
 
 Zombie::Zombie(const Complexity &complexityOfLevel, const Position &position, const HP &hp)
     : AliveActor(position,
-                 HP(hp.getHP() * complexityOfLevel.getZombieLifesCoeff()))
+                 HP(hp.getHP() * complexityOfLevel.getZombieLifesCoeff())),
+      complexityOfLevel(complexityOfLevel)
 {
 }
 
@@ -16,13 +17,13 @@ ActorType Zombie::getType() const
     return ZOMBIE;
 }
 
-void Zombie::move()
+const Complexity &Zombie::getComplexity() const
 {
-
+    return complexityOfLevel;
 }
 
-bool Zombie::canMove() const
+void Zombie::move()
 {
-
+    setPosition(Position(getPosition().getPhysicX() - 1, getPosition().getPhysicY()));
 }
 

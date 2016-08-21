@@ -10,3 +10,28 @@ StrongZombie::~StrongZombie()
 
 }
 
+void StrongZombie::draw() const
+{
+
+}
+
+void StrongZombie::sound() const
+{
+
+}
+
+Actor *StrongZombie::copy() const
+{
+    return new StrongZombie(getComplexity(), getPosition());
+}
+
+void StrongZombie::generateAttack(Actor &attacked)
+{
+
+}
+
+void StrongZombie::AttackReloading() const
+{
+
+}
+

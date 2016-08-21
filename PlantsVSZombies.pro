@@ -47,7 +47,10 @@ SOURCES += main.cpp\
     data/menu/gamechoice.cpp \
     data/menu/game.cpp \
     data/menu/exit.cpp \
-    data/gamestate.cpp
+    data/gamestate.cpp \
+    data/goals/hangintime.cpp \
+    data/goals/collectsuns.cpp \
+    data/goals/killzombies.cpp
 
 HEADERS  += mainwindow.h \
     data/ground/ground.h \
@@ -84,6 +87,9 @@ HEADERS  += mainwindow.h \
     data/menu/gamechoice.h \
     data/menu/game.h \
     data/menu/exit.h \
-    data/gamestate.h
+    data/gamestate.h \
+    data/goals/hangintime.h \
+    data/goals/collectsuns.h \
+    data/goals/killzombies.h
 
 FORMS    += mainwindow.ui

@@ -20,6 +20,10 @@ public:
     Physic_Coordinate getPhysicY() const;
     Graphical_Coordinate getGraphicalX(float offsetX, float cellSizeX) const;
     Graphical_Coordinate getGraphicalY(float offsetY, float cellSizeY) const;
+    void setLogicPosition(Logic_Coordinate x, Logic_Coordinate y);
+    void setPhysicPosition(Physic_Coordinate x, Physic_Coordinate y);
+    void setLogicPosition(Position newPosition);
+    void setPhysicPosition(Position newPosition);
 };
 
 #endif // POSITION_H

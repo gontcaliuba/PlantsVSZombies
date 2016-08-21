@@ -49,3 +49,27 @@ Graphical_Coordinate Position::getGraphicalY(float offsetY, float cellSizeY) con
     return offsetY + y*cellSizeY;
 }
 
+void Position::setLogicPosition(Logic_Coordinate x, Logic_Coordinate y)
+{
+    this->x = x;
+    this->y = y;
+}
+
+void Position::setPhysicPosition(Physic_Coordinate x, Physic_Coordinate y)
+{
+    this->x = x;
+    this->y = y;
+}
+
+void Position::setLogicPosition(Position newPosition)
+{
+    this->x = newPosition.getLogicX();
+    this->y = newPosition.getLogicY();
+}
+
+void Position::setPhysicPosition(Position newPosition)
+{
+    this->x = newPosition.getPhysicX();
+    this->y = newPosition.getPhysicY();
+}
+

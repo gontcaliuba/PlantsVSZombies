@@ -11,5 +11,10 @@ Actor::~Actor()
 
 const Position &Actor::getPosition() const
 {
-        return position;
+    return position;
+}
+
+void Actor::setPosition(Position newPosition)
+{
+    position.setPhysicPosition(newPosition);
 }

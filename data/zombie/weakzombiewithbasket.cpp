@@ -11,3 +11,28 @@ WeakZombieWithBasket::~WeakZombieWithBasket()
 
 }
 
+void WeakZombieWithBasket::draw() const
+{
+
+}
+
+void WeakZombieWithBasket::sound() const
+{
+
+}
+
+Actor *WeakZombieWithBasket::copy() const
+{
+    return new WeakZombieWithBasket(getComplexity(), getPosition());
+}
+
+void WeakZombieWithBasket::generateAttack(Actor &attacked)
+{
+
+}
+
+void WeakZombieWithBasket::AttackReloading() const
+{
+
+}
+
