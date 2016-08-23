@@ -39,7 +39,6 @@ SOURCES += main.cpp\
     data/zombie/boss.cpp \
     data/zombie/weakzombiewithbasket.cpp \
     data/plants/emptyplant.cpp \
-    data/other/attack.cpp \
     data/goals/goal.cpp \
     data/menu/menustate.cpp \
     data/menu/mainmenu.cpp \
@@ -50,7 +49,13 @@ SOURCES += main.cpp\
     data/gamestate.cpp \
     data/goals/hangintime.cpp \
     data/goals/collectsuns.cpp \
-    data/goals/killzombies.cpp
+    data/goals/killzombies.cpp \
+    data/attacks/attack.cpp \
+    data/attacks/zombiesattack.cpp \
+    data/attacks/cabbageattack.cpp \
+    data/attacks/laserattack.cpp \
+    data/attacks/boxerattack.cpp \
+    data/attacks/thornsattack.cpp
 
 HEADERS  += mainwindow.h \
     data/ground/ground.h \
@@ -79,7 +84,6 @@ HEADERS  += mainwindow.h \
     data/zombie/boss.h \
     data/zombie/weakzombiewithbasket.h \
     data/plants/emptyplant.h \
-    data/other/attack.h \
     data/goals/goal.h \
     data/menu/menustate.h \
     data/menu/mainmenu.h \
@@ -90,6 +94,12 @@ HEADERS  += mainwindow.h \
     data/gamestate.h \
     data/goals/hangintime.h \
     data/goals/collectsuns.h \
-    data/goals/killzombies.h
+    data/goals/killzombies.h \
+    data/attacks/attack.h \
+    data/attacks/zombiesattack.h \
+    data/attacks/cabbageattack.h \
+    data/attacks/laserattack.h \
+    data/attacks/boxerattack.h \
+    data/attacks/thornsattack.h
 
 FORMS    += mainwindow.ui

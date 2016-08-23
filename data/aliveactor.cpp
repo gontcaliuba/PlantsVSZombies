@@ -26,11 +26,8 @@ void AliveActor::takeDamage(Health_Points damagedHP)
     hp.reduceHealth(damagedHP);
 }
 
-void AliveActor::generateAttack(Actor &attacked)
+void AliveActor::generateAttack()
 {
-    Attack attack(getPosition());
-    if (attack.canAttack(attacked) == true)
-        attack.attack(attacked);
 }
 
 void AliveActor::AttackReloading() const
