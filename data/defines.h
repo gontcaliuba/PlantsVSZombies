@@ -12,9 +12,18 @@ typedef float Fertility;
 typedef float Sun_Point;
 typedef float Plant_Power;
 typedef float Zombie_Power_Coeff;
-typedef int Millisecond;
+typedef long Millisecond;
 typedef QString GoalsMessage;
 typedef bool Status;
+
+
+struct GoalsConditions
+{
+    bool isZombieAfterBorder;
+    bool allZombiesDead;
+    Sun_Point collectedSuns;
+    Millisecond elapsedTime;
+};
 
 #endif // DEFINES
 

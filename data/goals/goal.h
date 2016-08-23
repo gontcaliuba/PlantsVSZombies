@@ -12,13 +12,15 @@ enum GoalState
 
 class Goal
 {
+protected:
     GoalsMessage goalsTxt;
 
 public:
-    Goal();
+    Goal(GoalsMessage goalsTxt);
     virtual ~Goal();
 
-    virtual GoalState getState() const = 0;
+    GoalsMessage getGoalsMessage() const;
+    virtual GoalState getState(const GoalsConditions &presentConditions) const = 0;
 };
 
 #endif // GOAL_H
