@@ -25,7 +25,7 @@ void Cabbage::generateAttack(Actor &attacked) const
     Q_UNUSED(attacked);
 }
 
-void Cabbage::AttackReloading() const
+void Cabbage::Reloading() const
 {
 
 }

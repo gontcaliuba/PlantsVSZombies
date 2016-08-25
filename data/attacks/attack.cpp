@@ -22,3 +22,13 @@ bool Attack::needToDestroy() const
     return false;
 }
 
+void Attack::attack()
+{
+    move();
+}
+
+void Attack::move()
+{
+
+}
+

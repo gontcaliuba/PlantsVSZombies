@@ -14,7 +14,7 @@ public:
     virtual Actor * copy() const;
 
     virtual void generateAttack(Actor &attacked);
-    virtual void AttackReloading() const;
+    virtual void Reloading() const;
 };
 
 #endif // STRONGZOMBIE_H

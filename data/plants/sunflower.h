@@ -16,7 +16,7 @@ public:
     virtual Actor * copy() const;
 
     void generateSuns();
-    virtual void AttackReloading() const;
+    virtual void Reloading() const;
     virtual PlantType getPlantType() const;
 
 };

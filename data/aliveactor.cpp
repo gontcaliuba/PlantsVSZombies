@@ -30,7 +30,7 @@ void AliveActor::generateAttack()
 {
 }
 
-void AliveActor::AttackReloading() const
+void AliveActor::Reloading() const
 {
 
 }

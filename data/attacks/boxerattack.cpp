@@ -9,4 +9,3 @@ BoxerAttack::~BoxerAttack()
 {
 
 }
-

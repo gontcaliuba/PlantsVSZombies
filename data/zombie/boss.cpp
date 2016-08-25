@@ -20,7 +20,7 @@ void Boss::generateAttack(Actor &attacked)
 
 }
 
-void Boss::AttackReloading() const
+void Boss::Reloading() const
 {
 
 }

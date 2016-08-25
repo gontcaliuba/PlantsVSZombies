@@ -31,7 +31,7 @@ void WeakZombie::generateAttack(Actor &attacked)
 
 }
 
-void WeakZombie::AttackReloading() const
+void WeakZombie::Reloading() const
 {
 
 }

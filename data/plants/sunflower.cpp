@@ -24,7 +24,7 @@ void Sunflower::generateSuns()
 {
 }
 
-void Sunflower::AttackReloading() const
+void Sunflower::Reloading() const
 {
 
 }

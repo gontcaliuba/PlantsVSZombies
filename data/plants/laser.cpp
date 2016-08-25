@@ -25,7 +25,7 @@ void Laser::generateAttack(Actor &attacked) const
     Q_UNUSED(attacked);
 }
 
-void Laser::AttackReloading() const
+void Laser::Reloading() const
 {
 
 }

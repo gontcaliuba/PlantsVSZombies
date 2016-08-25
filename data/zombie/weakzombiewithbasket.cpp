@@ -31,7 +31,7 @@ void WeakZombieWithBasket::generateAttack(Actor &attacked)
 
 }
 
-void WeakZombieWithBasket::AttackReloading() const
+void WeakZombieWithBasket::Reloading() const
 {
 
 }

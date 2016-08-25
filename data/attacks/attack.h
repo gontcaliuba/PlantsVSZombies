@@ -1,6 +1,7 @@
 #ifndef ATTACK_H
 #define ATTACK_H
 
+#include <QList>
 #include "data/actor.h"
 #include "data/aliveactor.h"
 #include "data/defines.h"
@@ -19,9 +20,8 @@ public:
     virtual ActorType getType() const;
     virtual bool needToDestroy() const;
 
-    virtual void attack() = 0;
-    virtual bool canAttack(Actor &actor) const = 0;
-    virtual void move() = 0;
+    virtual void attack();
+    virtual void move();
 };
 
 #endif // ATTACK_H

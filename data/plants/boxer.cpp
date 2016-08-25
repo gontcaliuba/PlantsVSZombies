@@ -20,7 +20,7 @@ void Boxer::generateAttack(Actor &attacked) const
     Q_UNUSED(attacked);
 }
 
-void Boxer::AttackReloading() const
+void Boxer::Reloading() const
 {
 
 }

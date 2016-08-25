@@ -20,7 +20,7 @@ public:
     virtual HP getHP() const;
     virtual void takeDamage(Health_Points damagedHP);
     virtual void generateAttack();
-    virtual void AttackReloading() const;
+    virtual void Reloading() const;
 };
 
 #endif // ALIVEACTOR_H

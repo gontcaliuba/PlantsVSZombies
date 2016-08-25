@@ -30,7 +30,7 @@ void StrongZombie::generateAttack(Actor &attacked)
 
 }
 
-void StrongZombie::AttackReloading() const
+void StrongZombie::Reloading() const
 {
 
 }

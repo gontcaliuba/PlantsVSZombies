@@ -13,7 +13,7 @@ public:
     virtual Actor * copy() const;
 
     virtual void generateAttack(Actor &attacked) const;
-    virtual void AttackReloading() const;
+    virtual void Reloading() const;
     virtual PlantType getPlantType() const;
 };
 

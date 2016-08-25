@@ -25,7 +25,7 @@ void Thorns::generateAttack(Actor &attacked) const
     Q_UNUSED(attacked);
 }
 
-void Thorns::AttackReloading() const
+void Thorns::Reloading() const
 {
 
 }
