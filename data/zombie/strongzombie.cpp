@@ -25,12 +25,12 @@ Actor *StrongZombie::copy() const
     return new StrongZombie(getComplexity(), getPosition());
 }
 
-void StrongZombie::generateAttack(Actor &attacked)
+void StrongZombie::generateAttack(Actor &attacked) const
 {
 
 }
 
-void StrongZombie::Reloading() const
+void StrongZombie::Reloading()
 {
 
 }

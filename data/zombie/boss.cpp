@@ -15,12 +15,12 @@ Actor *Boss::copy() const
     return new Boss(getComplexity(), getPosition());
 }
 
-void Boss::generateAttack(Actor &attacked)
+void Boss::generateAttack(Actor &attacked) const
 {
 
 }
 
-void Boss::Reloading() const
+void Boss::Reloading()
 {
 
 }

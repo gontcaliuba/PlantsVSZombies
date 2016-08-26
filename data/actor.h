@@ -27,7 +27,7 @@ public:
     virtual ActorType getType() const = 0;
     virtual bool needToDestroy() const = 0;
     const Position &getPosition() const;
-    void setPosition(Position newPosition);
+    void setPosition(Position newPosition); //!! передача по ссылке
 };
 
 

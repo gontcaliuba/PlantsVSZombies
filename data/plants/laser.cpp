@@ -1,7 +1,7 @@
 #include "laser.h"
 
 Laser::Laser(const Position &position)
-    : Plant(position, HP(40), 200)
+    : Plant(position, HP(40))
 {
 }
 
@@ -20,12 +20,17 @@ Actor *Laser::copy() const
     return new Laser(getPosition());
 }
 
+Sun_Point Laser::getPlantPrice() const
+{
+    return 200;
+}
+
 void Laser::generateAttack(Actor &attacked) const
 {
     Q_UNUSED(attacked);
 }
 
-void Laser::Reloading() const
+void Laser::Reloading()
 {
 
 }

@@ -6,9 +6,10 @@
 class KillZombies : public Goal
 {
 public:
-    KillZombies(GoalsMessage goalsTxt);
+    KillZombies();
     virtual ~KillZombies();
 
+    GoalsMessage &getGoalsMessage() const;
     virtual GoalState getState(const GoalsConditions &presentConditions) const;
 };
 

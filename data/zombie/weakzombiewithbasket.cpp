@@ -26,12 +26,12 @@ Actor *WeakZombieWithBasket::copy() const
     return new WeakZombieWithBasket(getComplexity(), getPosition());
 }
 
-void WeakZombieWithBasket::generateAttack(Actor &attacked)
+void WeakZombieWithBasket::generateAttack(Actor &attacked) const
 {
 
 }
 
-void WeakZombieWithBasket::Reloading() const
+void WeakZombieWithBasket::Reloading()
 {
 
 }

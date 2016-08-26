@@ -12,11 +12,11 @@ AliveActor::~AliveActor()
 
 bool AliveActor::needToDestroy() const
 {
-    if (hp.getHP() > 0) return false;
-    return true;
+    if (hp.isDead()) return true;
+    return false;
 }
 
-HP AliveActor::getHP() const
+const HP& AliveActor::getHP() const
 {
     return hp;
 }
@@ -26,12 +26,4 @@ void AliveActor::takeDamage(Health_Points damagedHP)
     hp.reduceHealth(damagedHP);
 }
 
-void AliveActor::generateAttack()
-{
-}
-
-void AliveActor::Reloading() const
-{
-
-}
 

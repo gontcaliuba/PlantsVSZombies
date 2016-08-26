@@ -12,8 +12,8 @@ public:
     explicit HP(Health_Points health);
     Health_Points getHP() const;
     void setHP(Health_Points health);
-    bool isAlive();
-    bool isDead();
+    bool isAlive() const;
+    bool isDead() const;
     void reduceHealth(Health_Points health);
 
 };

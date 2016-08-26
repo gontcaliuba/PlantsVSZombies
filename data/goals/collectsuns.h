@@ -8,9 +8,10 @@ class CollectSuns : public Goal
     Sun_Point needToCollect;
 
 public:
-    CollectSuns(GoalsMessage goalsTxt, Sun_Point needToCollect);
+    CollectSuns(Sun_Point needToCollect);
     virtual ~CollectSuns();
 
+    GoalsMessage &getGoalsMessage() const;
     virtual GoalState getState(const GoalsConditions &presentConditions) const;
 
 };

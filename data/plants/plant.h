@@ -16,16 +16,14 @@ enum PlantType
 
 class Plant : public AliveActor
 {
-    Sun_Point price;
-
 public:
-    Plant(const Position &position, const HP &hp, const Sun_Point &price);
+    Plant(const Position &position, const HP &hp);
     virtual ~Plant();
 
     virtual ActorType getType() const;
     virtual void sound() const;
 
-    Sun_Point getPlantPrice() const;
+    virtual Sun_Point getPlantPrice() const = 0;
     virtual PlantType getPlantType() const = 0;
     virtual bool canReplant(const Plant &plant) const;
 };

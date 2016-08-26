@@ -2,7 +2,7 @@
 
 
 EmptyPlant::EmptyPlant(const Position &position)
-    : Plant(position, HP(0), 0)
+    : Plant(position, HP(0))
 {
 }
 
@@ -19,6 +19,21 @@ void EmptyPlant::draw() const
 Actor *EmptyPlant::copy() const
 {
     return new EmptyPlant(getPosition());
+}
+
+void EmptyPlant::generateAttack(Actor &attacked) const
+{
+
+}
+
+void EmptyPlant::Reloading()
+{
+
+}
+
+Sun_Point EmptyPlant::getPlantPrice() const
+{
+    return 0;
 }
 
 bool EmptyPlant::canReplant(const Plant &plant) const

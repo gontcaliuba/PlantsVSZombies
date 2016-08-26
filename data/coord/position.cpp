@@ -17,16 +17,12 @@ Position::Position(Logic_Coordinate x, Logic_Coordinate y)
 
 Logic_Coordinate Position::getLogicX() const
 {
-    double integer;
-    modf(x, &integer);
-    return integer;
+    return Logic_Coordinate(x);
 }
 
 Logic_Coordinate Position::getLogicY() const
 {
-    double integer;
-    modf(y, &integer);
-    return integer;
+    return Logic_Coordinate(y);
 }
 
 Physic_Coordinate Position::getPhysicX() const

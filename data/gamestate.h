@@ -6,7 +6,7 @@
 class GameState
 {
 public:
-    MenuState gameState;
+    MenuState gameState; //!! нужна ли инициализация переменной?
 
 public:
     GameState();

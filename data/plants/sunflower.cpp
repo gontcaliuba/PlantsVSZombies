@@ -1,7 +1,7 @@
 #include "sunflower.h"
 
 Sunflower::Sunflower(const Position &position)
-    : Plant(position, HP(40), 50)
+    : Plant(position, HP(40))
 {
 }
 
@@ -20,11 +20,21 @@ Actor *Sunflower::copy() const
     return new Sunflower(getPosition());
 }
 
+Sun_Point Sunflower::getPlantPrice() const
+{
+    return 50;
+}
+
 void Sunflower::generateSuns()
 {
 }
 
-void Sunflower::Reloading() const
+void Sunflower::generateAttack(Actor &attacked) const
+{
+
+}
+
+void Sunflower::Reloading()
 {
 
 }

@@ -9,7 +9,7 @@
 class Attack : public Actor
 {
     Damage damage;
-    int amplitude;
+    int amplitude;  //!! почему здесь?
     Actor &attacked;
     Status isActive;
 

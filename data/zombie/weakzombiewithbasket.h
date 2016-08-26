@@ -13,8 +13,8 @@ public:
     virtual void sound() const;
     virtual Actor * copy() const;
 
-    virtual void generateAttack(Actor &attacked);
-    virtual void Reloading() const;
+    virtual void generateAttack(Actor &attacked) const;
+    virtual void Reloading();
 };
 
 #endif // WEAKZOMBIEWITHBASKET_H

@@ -20,16 +20,15 @@ void HP::setHP(Health_Points health)
     this->health = health;
 }
 
-bool HP::isAlive()
+bool HP::isAlive() const
 {
     if (health > 0) return true;
     else return false;
 }
 
-bool HP::isDead()
+bool HP::isDead() const
 {
-    if (health > 0) return false;
-    else return true;
+    return !isAlive();
 }
 
 void HP::reduceHealth(Health_Points health)

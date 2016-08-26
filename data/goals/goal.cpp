@@ -1,17 +1,11 @@
 #include "goal.h"
 
-Goal::Goal(GoalsMessage goalsTxt)
-    : goalsTxt(goalsTxt)
+Goal::Goal()
 {
 }
 
 Goal::~Goal()
 {
 
-}
-
-GoalsMessage Goal::getGoalsMessage() const
-{
-    return goalsTxt;
 }
 

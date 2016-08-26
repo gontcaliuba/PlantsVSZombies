@@ -17,10 +17,10 @@ public:
 
     virtual bool needToDestroy() const;
 
-    virtual HP getHP() const;
+    const virtual HP& getHP() const;
     virtual void takeDamage(Health_Points damagedHP);
-    virtual void generateAttack();
-    virtual void Reloading() const;
+    virtual void generateAttack(Actor &attacked) const = 0; //!! функция без параметров и без значения: кто владеет атакой? + pure function
+    virtual void Reloading() = 0;
 };
 
 #endif // ALIVEACTOR_H

@@ -1,19 +1,13 @@
 #include "plant.h"
 
-Plant::Plant(const Position &position, const HP &hp, const Sun_Point &price)
-    : AliveActor(position, hp),
-      price(price)
+Plant::Plant(const Position &position, const HP &hp)
+    : AliveActor(position, hp)
 {
 }
 
 Plant::~Plant()
 {
 
-}
-
-Sun_Point Plant::getPlantPrice() const
-{
-    return price;
 }
 
 ActorType Plant::getType() const

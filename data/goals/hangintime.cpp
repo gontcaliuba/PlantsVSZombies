@@ -1,7 +1,7 @@
 #include "hangintime.h"
 
-HangInTime::HangInTime(GoalsMessage goalsTxt, Millisecond timeToHang)
-    : Goal(goalsTxt),
+HangInTime::HangInTime(Millisecond timeToHang)
+    : Goal(),
       timeToHang(timeToHang)
 {
 }
@@ -11,10 +11,15 @@ HangInTime::~HangInTime()
 
 }
 
+GoalsMessage &HangInTime::getGoalsMessage() const
+{
+
+}
+
 GoalState HangInTime::getState(const GoalsConditions &presentConditions) const
 {
     if (presentConditions.isZombieAfterBorder == true) return Failed;
-    else if(presentConditions.elapsedTime == timeToHang) return Reached;
+    else if (presentConditions.elapsedTime >= timeToHang) return Reached;
     else return NotReached;
 }
 

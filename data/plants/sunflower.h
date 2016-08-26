@@ -15,8 +15,10 @@ public:
     virtual void draw() const;
     virtual Actor * copy() const;
 
+    Sun_Point getPlantPrice() const;
     void generateSuns();
-    virtual void Reloading() const;
+    virtual void generateAttack(Actor &attacked) const;
+    virtual void Reloading();
     virtual PlantType getPlantType() const;
 
 };

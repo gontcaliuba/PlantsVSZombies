@@ -8,9 +8,10 @@ class HangInTime : public Goal
     Millisecond timeToHang;
 
 public:
-    HangInTime(GoalsMessage goalsTxt, Millisecond timeToHang);
+    HangInTime(Millisecond timeToHang);
     virtual ~HangInTime();
 
+    GoalsMessage &getGoalsMessage() const;
     virtual GoalState getState(const GoalsConditions &presentConditions) const;
 };
 
