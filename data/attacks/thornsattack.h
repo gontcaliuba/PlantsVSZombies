@@ -6,8 +6,11 @@
 class ThornsAttack : public Attack
 {
 public:
-    ThornsAttack(const Position &position, Actor &attacked);
+    ThornsAttack(const Position &position, const QList<Actor*> &attacked);
     virtual ~ThornsAttack();
+
+    virtual void attack();
+    virtual void move();
 };
 
 #endif // THORNSATTACK_H

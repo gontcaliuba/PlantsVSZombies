@@ -5,8 +5,8 @@
 #include "data/complexity/complexity.h"
 #include "data/actor.h"
 #include "data/other/hp.h"
-#include "data/attacks/attack.h"
 
+class Attack;
 class AliveActor : public Actor
 {
     HP hp;

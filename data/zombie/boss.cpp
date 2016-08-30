@@ -17,7 +17,7 @@ Actor *Boss::copy() const
 
 void Boss::generateAttack(Actor &attacked) const
 {
-
+    Q_UNUSED(attacked);
 }
 
 void Boss::Reloading()

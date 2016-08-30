@@ -6,8 +6,11 @@
 class LaserAttack : public Attack
 {
 public:
-    LaserAttack(const Position &position, Actor &attacked);
+    LaserAttack(const Position &position, const QList<Actor*> &attacked);
     virtual ~LaserAttack();
+
+    virtual void attack();
+    virtual void move();
 };
 
 #endif // LASERATTACK_H

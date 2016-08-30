@@ -23,7 +23,7 @@ Actor *EmptyPlant::copy() const
 
 void EmptyPlant::generateAttack(Actor &attacked) const
 {
-
+    Q_UNUSED(attacked);
 }
 
 void EmptyPlant::Reloading()

@@ -6,8 +6,11 @@
 class ZombiesAttack : public Attack
 {
 public:
-    ZombiesAttack(const Position &position, Actor &attacked);
+    ZombiesAttack(const Position &position, const QList<Actor *> &attacked);
     virtual ~ZombiesAttack();
+
+    virtual void attack();
+    virtual void move();
 };
 
 #endif // ZOMBIESATTACK_H

@@ -28,7 +28,7 @@ Actor *WeakZombie::copy() const
 
 void WeakZombie::generateAttack(Actor &attacked) const
 {
-
+    Q_UNUSED(attacked);
 }
 
 void WeakZombie::Reloading()

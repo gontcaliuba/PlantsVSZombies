@@ -6,8 +6,11 @@
 class BoxerAttack : public Attack
 {
 public:
-    BoxerAttack(const Position &position, Actor &attacked);
+    BoxerAttack(const Position &position, const QList<Actor*> &attacked);
     virtual ~BoxerAttack();
+
+    virtual void attack();
+    virtual void move();
 };
 
 #endif // BOXERATTACK_H

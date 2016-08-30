@@ -31,7 +31,7 @@ void Sunflower::generateSuns()
 
 void Sunflower::generateAttack(Actor &attacked) const
 {
-
+    Q_UNUSED(attacked);
 }
 
 void Sunflower::Reloading()

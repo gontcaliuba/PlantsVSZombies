@@ -1,9 +1,15 @@
 #include "attack.h"
 
-Attack::Attack(const Position &position, Damage damage, int amplitude, Actor &attacked)
-    : Actor(position),
-      damage(damage), amplitude(amplitude), attacked(attacked), isActive(true)
+Attack::Attack(const Position &position, Damage damage, const QList<Actor*> &attacked)
+    : Actor(position)
 {
+    this->damage = damage;
+    this->isActive = true;
+
+    for (int i = 0; i < attacked.count(); i++)
+    {
+        this->attacked.append(dynamic_cast<AliveActor*> (attacked[i]));
+    }
 }
 
 Attack::~Attack()
@@ -22,12 +28,4 @@ bool Attack::needToDestroy() const
     return false;
 }
 
-void Attack::attack()
-{
-}
-
-void Attack::move()
-{
-
-}
 

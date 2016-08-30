@@ -27,7 +27,7 @@ Actor *StrongZombie::copy() const
 
 void StrongZombie::generateAttack(Actor &attacked) const
 {
-
+    Q_UNUSED(attacked);
 }
 
 void StrongZombie::Reloading()
