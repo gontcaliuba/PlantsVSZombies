@@ -24,7 +24,6 @@ bool Attack::needToDestroy() const
 
 void Attack::attack()
 {
-    move(); //!! почему здесь
 }
 
 void Attack::move()

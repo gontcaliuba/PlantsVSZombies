@@ -22,10 +22,10 @@ public:
     Graphical_Coordinate getGraphicalY(float offsetY, float cellSizeY) const;
     void setLogicPosition(Logic_Coordinate x, Logic_Coordinate y);
     void setPhysicPosition(Physic_Coordinate x, Physic_Coordinate y);
-    void setLogicPosition(Position newPosition);    //!! ????
-    void setPhysicPosition(Position newPosition);   //!! ????
-
-    //!! добавить setLogicX, setLogicY и т.д.
+    void setLogicX(Logic_Coordinate x);
+    void setLogicY(Logic_Coordinate y);
+    void setPhysicX(Physic_Coordinate x);
+    void setPhysicY(Physic_Coordinate y);
 };
 
 #endif // POSITION_H

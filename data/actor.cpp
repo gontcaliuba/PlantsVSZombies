@@ -14,7 +14,7 @@ const Position &Actor::getPosition() const
     return position;
 }
 
-void Actor::setPosition(Position newPosition)
+void Actor::setPosition(Physic_Coordinate x, Physic_Coordinate y)
 {
-    position.setPhysicPosition(newPosition);
+    position.setPhysicPosition(x, y);
 }

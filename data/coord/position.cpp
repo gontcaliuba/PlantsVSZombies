@@ -57,15 +57,23 @@ void Position::setPhysicPosition(Physic_Coordinate x, Physic_Coordinate y)
     this->y = y;
 }
 
-void Position::setLogicPosition(Position newPosition)
+void Position::setLogicX(Logic_Coordinate x)
 {
-    this->x = newPosition.getLogicX();
-    this->y = newPosition.getLogicY();
+    this->x = x;
 }
 
-void Position::setPhysicPosition(Position newPosition)
+void Position::setLogicY(Logic_Coordinate y)
 {
-    this->x = newPosition.getPhysicX();
-    this->y = newPosition.getPhysicY();
+    this->y = y;
+}
+
+void Position::setPhysicX(Physic_Coordinate x)
+{
+    this->x = x;
+}
+
+void Position::setPhysicY(Physic_Coordinate y)
+{
+    this->y = y;
 }
 

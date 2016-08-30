@@ -24,6 +24,6 @@ const Complexity &Zombie::getComplexity() const
 
 void Zombie::move()
 {
-    setPosition(Position(getPosition().getPhysicX() - 1, getPosition().getPhysicY()));
+    setPosition(getPosition().getPhysicX() - 1, getPosition().getPhysicY());
 }
 
