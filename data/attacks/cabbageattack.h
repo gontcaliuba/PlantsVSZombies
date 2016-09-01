@@ -16,6 +16,10 @@ public:
     CabbageAttack(const Position &position, Actor *attacked);
     virtual ~CabbageAttack();
 
+    virtual void draw() const;
+    virtual void sound() const;
+    virtual Actor * copy() const;
+
     virtual getDamage() const;
     virtual void attack();
     virtual void move();

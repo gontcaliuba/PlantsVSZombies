@@ -14,6 +14,21 @@ LaserAttack::~LaserAttack()
 
 }
 
+void LaserAttack::draw() const
+{
+
+}
+
+void LaserAttack::sound() const
+{
+
+}
+
+Actor *LaserAttack::copy() const
+{
+    //return new LaserAttack(getPosition(),);
+}
+
 LaserAttack::getDamage() const
 {
     return 15;

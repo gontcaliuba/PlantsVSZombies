@@ -14,6 +14,21 @@ ThornsAttack::~ThornsAttack()
 
 }
 
+void ThornsAttack::draw() const
+{
+
+}
+
+void ThornsAttack::sound() const
+{
+
+}
+
+Actor *ThornsAttack::copy() const
+{
+    //return new ThornsAttack(getComplexity(), getPosition());
+}
+
 ThornsAttack::getDamage() const
 {
     return 5;

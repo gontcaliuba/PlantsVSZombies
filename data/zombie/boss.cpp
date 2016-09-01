@@ -15,7 +15,7 @@ Actor *Boss::copy() const
     return new Boss(getComplexity(), getPosition());
 }
 
-void Boss::generateAttack(Actor &attacked) const
+void Boss::generateAttack(QList<Actor *> &attacked) const
 {
     Q_UNUSED(attacked);
 }

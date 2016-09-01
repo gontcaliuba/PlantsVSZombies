@@ -19,7 +19,7 @@ public:
 
     const virtual HP& getHP() const;
     virtual void takeDamage(Health_Points damagedHP);
-    virtual void generateAttack(Actor &attacked) const = 0; //!! функция без параметров и без значения: кто владеет атакой? + pure function
+    virtual void generateAttack(QList<Actor*> &attacked) const = 0; //!! функция без параметров и без значения: кто владеет атакой? + pure function
     virtual void Reloading() = 0;
 };
 

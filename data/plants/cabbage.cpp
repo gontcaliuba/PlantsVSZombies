@@ -25,7 +25,7 @@ Sun_Point Cabbage::getPlantPrice() const
     return 100;
 }
 
-void Cabbage::generateAttack(Actor &attacked) const
+void Cabbage::generateAttack(QList<Actor *> &attacked) const
 {
     Q_UNUSED(attacked);
 }

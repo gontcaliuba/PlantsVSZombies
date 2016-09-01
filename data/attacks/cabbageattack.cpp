@@ -13,6 +13,21 @@ CabbageAttack::~CabbageAttack()
 
 }
 
+void CabbageAttack::draw() const
+{
+
+}
+
+void CabbageAttack::sound() const
+{
+
+}
+
+Actor *CabbageAttack::copy() const
+{
+    return new CabbageAttack(getPosition(), attacked);
+}
+
 CabbageAttack::getDamage() const
 {
     return 10;

@@ -14,6 +14,21 @@ BoxerAttack::~BoxerAttack()
 
 }
 
+void BoxerAttack::draw() const
+{
+
+}
+
+void BoxerAttack::sound() const
+{
+
+}
+
+Actor *BoxerAttack::copy() const
+{
+    //return new BoxerAttack(getComplexity(), getPosition());
+}
+
 BoxerAttack::getDamage() const
 {
     return 5;

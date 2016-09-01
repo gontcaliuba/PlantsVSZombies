@@ -25,7 +25,7 @@ Sun_Point Thorns::getPlantPrice() const
     return 100;
 }
 
-void Thorns::generateAttack(Actor &attacked) const
+void Thorns::generateAttack(QList<Actor *> &attacked) const
 {
     Q_UNUSED(attacked);
 }

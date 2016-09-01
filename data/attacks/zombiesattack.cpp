@@ -11,6 +11,21 @@ ZombiesAttack::~ZombiesAttack()
 
 }
 
+void ZombiesAttack::draw() const
+{
+
+}
+
+void ZombiesAttack::sound() const
+{
+
+}
+
+Actor *ZombiesAttack::copy() const
+{
+    return new ZombiesAttack(getPosition(), attacked);
+}
+
 ZombiesAttack::getDamage() const
 {
     return 10;

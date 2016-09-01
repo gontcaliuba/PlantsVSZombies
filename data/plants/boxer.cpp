@@ -15,9 +15,9 @@ void Boxer::draw() const
 
 }
 
-void Boxer::generateAttack(Actor &attacked) const
+void Boxer::generateAttack(QList<Actor*> &attacked) const
 {
-    Q_UNUSED(attacked);
+    BoxerAttack(getPosition(), attacked).attack();//!!
 }
 
 void Boxer::Reloading()

@@ -26,7 +26,7 @@ Actor *WeakZombieWithBasket::copy() const
     return new WeakZombieWithBasket(getComplexity(), getPosition());
 }
 
-void WeakZombieWithBasket::generateAttack(Actor &attacked) const
+void WeakZombieWithBasket::generateAttack(QList<Actor *> &attacked) const
 {
     Q_UNUSED(attacked);
 }

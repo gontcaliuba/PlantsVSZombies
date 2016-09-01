@@ -12,7 +12,7 @@ public:
     virtual void draw() const;
     virtual Actor * copy() const;
 
-    virtual void generateAttack(Actor &attacked) const;
+    virtual void generateAttack(QList<Actor*> &attacked) const;
     virtual void Reloading();
     Sun_Point getPlantPrice() const;
     virtual bool canReplant(const Plant &plant) const;

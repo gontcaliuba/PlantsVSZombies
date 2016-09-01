@@ -25,7 +25,7 @@ Actor *StrongZombie::copy() const
     return new StrongZombie(getComplexity(), getPosition());
 }
 
-void StrongZombie::generateAttack(Actor &attacked) const
+void StrongZombie::generateAttack(QList<Actor *> &attacked) const
 {
     Q_UNUSED(attacked);
 }

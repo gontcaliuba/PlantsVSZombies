@@ -25,7 +25,7 @@ Sun_Point Laser::getPlantPrice() const
     return 200;
 }
 
-void Laser::generateAttack(Actor &attacked) const
+void Laser::generateAttack(QList<Actor *> &attacked) const
 {
     Q_UNUSED(attacked);
 }

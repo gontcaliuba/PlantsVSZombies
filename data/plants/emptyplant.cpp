@@ -21,7 +21,7 @@ Actor *EmptyPlant::copy() const
     return new EmptyPlant(getPosition());
 }
 
-void EmptyPlant::generateAttack(Actor &attacked) const
+void EmptyPlant::generateAttack(QList<Actor *> &attacked) const
 {
     Q_UNUSED(attacked);
 }

@@ -13,7 +13,7 @@ public:
     virtual void sound() const;
     virtual Actor * copy() const;
 
-    virtual void generateAttack(Actor &attacked) const;
+    virtual void generateAttack(QList<Actor*> &attacked) const;
     virtual void Reloading();
 };
 

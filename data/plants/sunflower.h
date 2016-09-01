@@ -17,7 +17,7 @@ public:
 
     Sun_Point getPlantPrice() const;
     void generateSuns();
-    virtual void generateAttack(Actor &attacked) const;
+    virtual void generateAttack(QList<Actor*> &attacked) const;
     virtual void Reloading();
     virtual PlantType getPlantType() const;
 
