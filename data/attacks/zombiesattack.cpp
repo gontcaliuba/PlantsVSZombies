@@ -12,7 +12,12 @@ ZombiesAttack::~ZombiesAttack()
 
 void ZombiesAttack::attack()
 {
-
+    if (attacked.isEmpty() == true) return;
+    for (int i = 0; i < attacked.count(); i++)
+    {
+        attacked[i]->takeDamage(damage);
+    }
+    isActive = false;
 }
 
 void ZombiesAttack::move()

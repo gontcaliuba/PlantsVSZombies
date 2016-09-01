@@ -8,11 +8,10 @@
 
 class Attack : public Actor
 {
-    Damage damage;
-    Status isActive;
-
 protected:
     QList<AliveActor *> attacked;
+    Damage damage;
+    Status isActive;
 
 public:
     Attack(const Position &position, Damage damage, const QList<Actor *> &attacked);

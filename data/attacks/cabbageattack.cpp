@@ -14,7 +14,9 @@ CabbageAttack::~CabbageAttack()
 
 void CabbageAttack::attack()
 {
-
+    if (attacked.isEmpty() == true) return;
+    attacked[0]->takeDamage(damage);
+    isActive = false;
 }
 
 void CabbageAttack::move()
@@ -24,12 +26,12 @@ void CabbageAttack::move()
 
 Physic_Coordinate CabbageAttack::getXn(Millisecond timeInMoment) const
 {
-    return (getPosition().getPhysicX() + Vx * timeInMoment);
+    return (getPosition().getPhysicX() + Vx * timeInMoment * 0.001); //время в секундах
 }
 
 Physic_Coordinate CabbageAttack::getYn(Millisecond timeInMoment) const
 {
-    return (getPosition().getPhysicY() + Vy * timeInMoment);
+    return (getPosition().getPhysicY() + Vy * timeInMoment * 0.001);
 }
 
 void CabbageAttack::init()
@@ -43,7 +45,7 @@ void CabbageAttack::init()
     if (deltaX == 0) X2 +=0.001;
     if (deltaX < 0) Vx = -Vx;
 
-    allTime = deltaX / Vx;
+    allTime = abs(deltaX / Vx);
     Vy = ((Y2 - Y1) / allTime) + a * allTime;
 }
 
