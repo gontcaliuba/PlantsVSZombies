@@ -9,17 +9,16 @@
 class Attack : public Actor
 {
 protected:
-    QList<AliveActor *> attacked;
-    Damage damage;
     Status isActive;
 
 public:
-    Attack(const Position &position, Damage damage, const QList<Actor *> &attacked);
+    Attack(const Position &position);
     virtual ~Attack();
 
     virtual ActorType getType() const;
     virtual bool needToDestroy() const;
 
+    virtual getDamage() const = 0;
     virtual void attack() = 0;
     virtual void move() = 0;
 };

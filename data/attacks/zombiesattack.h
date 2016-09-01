@@ -5,10 +5,13 @@
 
 class ZombiesAttack : public Attack
 {
+    AliveActor *attacked;
+
 public:
-    ZombiesAttack(const Position &position, const QList<Actor *> &attacked);
+    ZombiesAttack(const Position &position, Actor *attacked);
     virtual ~ZombiesAttack();
 
+    virtual getDamage() const;
     virtual void attack();
     virtual void move();
 };

@@ -1,8 +1,9 @@
 #include "zombiesattack.h"
 
-ZombiesAttack::ZombiesAttack(const Position &position, const QList<Actor*> &attacked)
-    : Attack(position, 10, attacked)
+ZombiesAttack::ZombiesAttack(const Position &position, Actor *attacked)
+    : Attack(position)
 {
+    this->attacked = dynamic_cast<AliveActor*> (attacked);
 }
 
 ZombiesAttack::~ZombiesAttack()
@@ -10,13 +11,16 @@ ZombiesAttack::~ZombiesAttack()
 
 }
 
+ZombiesAttack::getDamage() const
+{
+    return 10;
+}
+
 void ZombiesAttack::attack()
 {
-    if (attacked.isEmpty() == true) return;
-    for (int i = 0; i < attacked.count(); i++)
-    {
-        attacked[i]->takeDamage(damage);
-    }
+    if (attacked == 0) return;
+
+    attacked->takeDamage(getDamage());
     isActive = false;
 }
 

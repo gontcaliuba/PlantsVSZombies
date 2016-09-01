@@ -1,9 +1,10 @@
 #include "cabbageattack.h"
 
-CabbageAttack::CabbageAttack(const Position &position, const QList<Actor*> &attacked)
-    : Attack(position, 10, attacked),
+CabbageAttack::CabbageAttack(const Position &position, Actor *attacked)
+    : Attack(position),
     Vx(4), a(0.3)
 {
+    this->attacked = dynamic_cast<AliveActor*> (attacked);
     init();
 }
 
@@ -12,10 +13,16 @@ CabbageAttack::~CabbageAttack()
 
 }
 
+CabbageAttack::getDamage() const
+{
+    return 10;
+}
+
 void CabbageAttack::attack()
 {
-    if (attacked.isEmpty() == true) return;
-    attacked[0]->takeDamage(damage);
+    if (attacked == 0) return;
+
+    attacked->takeDamage(getDamage());
     isActive = false;
 }
 
@@ -38,8 +45,8 @@ void CabbageAttack::init()
 {
     Physic_Coordinate X1 = getPosition().getPhysicX();
     Physic_Coordinate Y1 = getPosition().getPhysicY();
-    Physic_Coordinate X2 = attacked[0]->getPosition().getPhysicX();
-    Physic_Coordinate Y2 = attacked[0]->getPosition().getPhysicY();
+    Physic_Coordinate X2 = attacked->getPosition().getPhysicX();
+    Physic_Coordinate Y2 = attacked->getPosition().getPhysicY();
 
     float deltaX = X2 - X1;
     if (deltaX == 0) X2 +=0.001;
